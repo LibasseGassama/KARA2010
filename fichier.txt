@@ -1,0 +1,18 @@
+
+CREATE TABLE communes_arrondissement (
+    id INT PRIMARY KEY,
+    commune VARCHAR(255),
+    code_commune VARCHAR(10) NULL,
+    departement_id INT,
+    FOREIGN KEY(departement_id) REFERENCES departements(id)
+);
+
+-- Inserting the communes and their arrondissement IDs.
+INSERT INTO communes_arrondissement (id, commune, code_commune, departement_id)
+VALUES
+(1, 'Almadies', 'Dakar001', 011),
+(2, 'Dakar Plateau', 'Dakar002', 011),
+(3, 'Grand Dakar', 'Dakar003', 011),
+(4, 'Parcelles Assainies', 'Dakar004', 011),
+-- Add the rest of the communes here (up to 133) following the same pattern
+(133, 'Vélingara', 'Kolda133', 102);
