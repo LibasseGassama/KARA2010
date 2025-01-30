@@ -1,0 +1,1 @@
+créer la table etudiant avec id matricule, prenom, nom ,date de naissance, lieu naissance, sexe ,nationalite ,adresse ,email et numero de telephone
